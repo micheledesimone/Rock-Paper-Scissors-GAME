@@ -1,0 +1,39 @@
+doctype html
+html
+	head
+		meta(charset="utf-8")
+		title Rock, Paper, Scissor
+		meta(name="viewport" content="width=device-width")
+		link(rel="stylesheet" href="css/style.css")
+		link(href='https://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css')
+
+	body
+		header
+			h1 Rock, Paper, Scissors
+
+		main
+
+			.display
+				.screen
+
+				span#winner 
+				
+				.player-1
+					img#paper-pic1.hide(src="assets/images/paper.png")
+					img#rock-pic1.hide(src="assets/images/rock.png")
+					img#scissors-pic1.hide(src="assets/images/scissors.png")
+
+				.player-2
+					img#paper-pic2.hide(src="assets/images/paper.png")
+					img#rock-pic2.hide(src="assets/images/rock.png")
+					img#scissors-pic2.hide(src="assets/images/scissors.png")
+
+			h2 Make your choose:
+			ul
+				li: a#rock(data-img="rock-pic1" href="#") ROCK
+				li: a#paper(data-img="paper-pic1" href="#") PAPER
+				li: a#scissors(data-img="scissors-pic1" href="#") SCISSORS
+
+
+		script(type="text/javascript" src="js/main.js")
+
